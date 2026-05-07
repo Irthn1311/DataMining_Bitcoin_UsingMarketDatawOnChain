@@ -24,16 +24,14 @@ DataMining_Bitcoin_UsingMarketDatawOnChain/
 │   └── btc_merged_event_daily.csv
 │
 ├── scripts/
-│   └── fetchData.py
 │
 ├── notebooks/
 │   └── main_analysis.ipynb
 │
-├── report/
-│   └── BaoCao.docx
+├── docs/
 │
 ├── requirements.txt
-└── readme.txt
+└── readme.md
 
 Lưu ý:
 Tên file/thư mục có thể thay đổi tùy theo quá trình thực hiện, nhưng các thành phần chính cần có gồm: dữ liệu, mã nguồn, notebook phân tích, báo cáo và file hướng dẫn.
