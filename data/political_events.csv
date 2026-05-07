@@ -1,0 +1,13 @@
+﻿date,event_name,event_type,region,severity
+2016-06-23,Brexit referendum,Referendum,United Kingdom / Europe,Medium
+2016-11-08,US presidential election 2016,Election,United States,Medium
+2020-03-11,WHO declares COVID-19 a pandemic,Global crisis,Global,High
+2020-11-03,US presidential election 2020,Election,United States,Medium
+2021-05-19,China crypto crackdown market shock,Crypto regulation,China,High
+2022-02-24,Russia invades Ukraine,War/Conflict,Europe,High
+2022-11-11,FTX files for bankruptcy,Crypto market crisis,Global,High
+2023-03-10,Silicon Valley Bank collapse,Banking crisis,United States,High
+2023-10-07,Israel-Hamas war begins,War/Conflict,Middle East,High
+2024-01-10,US spot Bitcoin ETF approval,Crypto regulation / Finance,United States,High
+2024-04-19,Bitcoin halving 2024,Crypto protocol event,Global,High
+2024-11-05,US presidential election 2024,Election,United States,Medium
