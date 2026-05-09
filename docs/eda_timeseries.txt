@@ -1,0 +1,10 @@
+Cấu trúc EDA Time Series đúng chuẩn (11 bước)
+Bước 1-2 — Chuẩn bị: Parse date, sort theo thời gian, tạo log_return và các biến thời gian.
+Bước 3-4 — Thống kê mô tả: Bổ sung skewness và kurtosis vào describe(), kiểm tra tính liên tục ngày (không chỉ null/duplicate).
+Bước 5 — Vẽ theo trục thời gian: Luôn vẽ line chart trước. Histogram đơn thuần bỏ qua thứ tự thời gian. Thêm moving average (MA30, MA90, MA365) để thấy xu hướng.
+Bước 6 — Kiểm định tính dừng (ADF/KPSS): Đây là bước quan trọng nhất và hoàn toàn vắng mặt trong EDA Iris. Kết quả: price_usd không dừng (p=0.756), log_return dừng (p≈0). Điều này quyết định cách bạn đưa dữ liệu vào mô hình.
+Bước 7 — ACF/PACF: Xác định cấu trúc tự tương quan. PACF cho thấy chỉ lag 1 quan trọng → BTC gần với Random Walk, gợi ý dùng lag_1 làm feature chính.
+Bước 8 — Phân phối Log Return: kurtosis ≈ 12 xác nhận fat tail, Jarque-Bera reject phân phối chuẩn. Có volatility clustering — cần mô hình xử lý được điều này (GARCH, LSTM).
+Bước 9 — STL Decomposition: Tách Trend + Seasonal + Residual. Trend chiếm phần lớn → đây là feature quan trọng cho mô hình.
+Bước 10 — Đa biến: Quan trọng nhất là phân biệt spurious correlation (tương quan ảo trên price level) và tương quan thực sự (trên log return). difficulty và hash_rate có r=0.91 với price nhưng giảm mạnh khi xét trên log return.
+Bước 11 — Tóm tắt & gợi ý mô hình: Train/test split phải theo thứ tự thời gian (2015-2022 train, 2023 val, 2024-2026 test), không bao giờ random.
