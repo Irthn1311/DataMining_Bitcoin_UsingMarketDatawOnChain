@@ -4,3 +4,5 @@ requests>=2.31.0
 yfinance>=0.2.40
 seaborn>=0.13.2
 matplotlib>=3.7.0
+scikit-learn
+xgboost
