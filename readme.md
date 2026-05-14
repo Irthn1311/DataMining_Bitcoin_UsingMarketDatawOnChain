@@ -1,4 +1,4 @@
-README - ĐỒ ÁN KHAI PHÁ DỮ LIỆU BITCOIN
+# ĐỒ ÁN KHAI PHÁ DỮ LIỆU BITCOIN
 
 1. THÔNG TIN ĐỀ TÀI
 Tên đề tài:
