@@ -59,6 +59,17 @@ Because this table is manually curated, event dates and source references should
 
 Evaluation includes classification metrics, clustering quality metrics, association-rule statistics, and statistical tests where appropriate.
 
+
+## Exploratory analysis examples
+
+The repository contains correlation visualizations produced during the EDA stage:
+
+![Bitcoin feature correlation analysis](eda/corr1.png)
+
+![Additional correlation analysis](eda/corr2.png)
+
+These figures are exploratory diagnostics and should not be interpreted as evidence of causal relationships.
+
 ## Time-series evaluation
 
 Bitcoin observations are ordered in time. Classification experiments should therefore use chronological train/validation/test splits or another time-aware protocol rather than random shuffling.
